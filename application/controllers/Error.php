@@ -29,6 +29,6 @@ class ErrorController extends QLib_Actions_Default
     }
 
     public function indexAction(){
-        //$this->getView()->render('error/error.phtml');
+        $this->getView()->render('error/error.phtml');
     }
 }

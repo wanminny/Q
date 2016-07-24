@@ -58,4 +58,5 @@ abstract class Models_Dao
         $replaceStr = implode($operator, $pieces);
         return $replaceStr;
     }
+
 }
