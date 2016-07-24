@@ -13,7 +13,8 @@ class IndexController extends QLib_Action
 
         echo "3333";
 //        return false;
-        $user = QINDemo_Models_Client::dao()->getOneByUid(1);
+        $user = Models_Facade_Open_Test::dao()->getOneByUid(1);
+//        Models_Facade_Open_Test
 
         $this->getView()->assign('user',$user);
 //        return false;

@@ -54,7 +54,7 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
 
     public function _initNamespaces()
     {
-        Yaf_Loader::getInstance()->registerLocalNameSpace(array('QINDemo','QLib', 'QLibConfigs', 'QLibView'));
+        Yaf_Loader::getInstance()->registerLocalNameSpace(array('Models','QLib', 'QLibConfigs', 'QLibView'));
     }
 
     public function _initPlugin(Yaf_Dispatcher $dispatcher)

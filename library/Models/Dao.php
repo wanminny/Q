@@ -1,6 +1,8 @@
 <?php
 
-abstract class QINDemo_Dao
+
+
+abstract class Models_Dao
 {
     /**
      * 数据对象
