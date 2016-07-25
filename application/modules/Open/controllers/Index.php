@@ -8,8 +8,19 @@
 
 class IndexController extends QLib_Action
 {
+
+
+    public function infoAction()
+    {
+        phpinfo();
+
+    }
+
+
     public function indexAction()
     {
+
+        var_dump((bool)ini_get("apc.enabled"));
         echo 11;
         echo __METHOD__;
 //        return false;

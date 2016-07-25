@@ -35,7 +35,6 @@ abstract class Models_Dao
     {
         $router_str = empty($router) ? $this->router : $router;
         $sqlMapPath = realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'SqlMap';
-//        var_dump($sqlMapPath);
         return Q_Db::mysql($router_str, $sqlMapPath);
     }
 
