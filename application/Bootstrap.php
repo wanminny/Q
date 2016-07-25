@@ -26,21 +26,16 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
     public function _initQin(Yaf_Dispatcher $dispatcher)
     {
         ############################ Begin 配置 ############################
-        $_config = ini_get('qin.config');
-        $_environment = ini_get('qin.environment');
-        defined('Q_APPLICATION_ENV') || define('Q_APPLICATION_ENV', $_environment);
-        if (empty($_config)) {
-            switch (Q_APPLICATION_ENV) {
-                case Q_Core_Consts::Q_APPLICATION_ENV_LOCALING :
-                    $_config = '/Data/bak/QF2.0/Framework/Config';
-                    break;
-                case Q_Core_Consts::Q_APPLICATION_ENV_TESTING :
-                    $_config = '/Data/bak/QF2.0/Framework/Config';
-                    break;
-                case Q_Core_Consts::Q_APPLICATION_ENV_RELEASE :
-                    $_config = '/Data/bak/QF2.0/Framework/Config';
-                    break;
-            }
+        switch (Q_APPLICATION_ENV) {
+            case Q_Core_Consts::Q_APPLICATION_ENV_LOCALING :
+                $_config = '/Data/bak/QF2.0/Framework/Config';
+                break;
+            case Q_Core_Consts::Q_APPLICATION_ENV_TESTING :
+                $_config = '/Data/bak/QF2.0/Framework/Config';
+                break;
+            case Q_Core_Consts::Q_APPLICATION_ENV_RELEASE :
+                $_config = '/Data/bak/QF2.0/Framework/Config';
+                break;
         }
         defined('QIN_CONFIG') || define('QIN_CONFIG', $_config);
         $_qdebug = $dispatcher->getRequest()->getQuery('_qdebug');

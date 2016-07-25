@@ -20,6 +20,11 @@ class IndexController extends QLib_Action
     public function indexAction()
     {
 
+        $demo = (new QLib\Concurrent());
+        $demo->yarClient('http://www.baidu.com');
+
+
+
         var_dump((bool)ini_get("apc.enabled"));
         echo 11;
         echo __METHOD__;
