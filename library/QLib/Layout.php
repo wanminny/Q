@@ -7,9 +7,6 @@
  * Time: 10:26
  */
 
-
-
-
 class QLib_Layout implements Yaf_View_Interface
 {
     public $breadcrumb = array();

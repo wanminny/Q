@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Zip
- * Date: 14/12/16
- * Time: 下午5:05
- */
+
 
 namespace QLib;
 

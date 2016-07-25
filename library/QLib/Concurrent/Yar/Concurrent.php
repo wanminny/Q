@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Zip
- * Date: 14/12/15
- * Time: 上午2:02
- */
 
 namespace QLib\Concurrent\Yar;
 

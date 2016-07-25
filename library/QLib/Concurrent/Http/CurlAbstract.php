@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Zip
- * Date: 15/4/8
- * Time: 下午1:55
- */
+
 
 namespace QLib\Concurrent\Http;
 

@@ -1,12 +1,5 @@
 <?php
 
-/**
- * @author zhanglirong
- * @date 2016.04.25
- * @time 12:38 pm
- */
-
-
 
 class QLibConfigs_Assets {
 
