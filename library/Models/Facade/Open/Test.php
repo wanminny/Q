@@ -17,7 +17,7 @@ class Models_Facade_Open_Test {
     private static $self;
 
     /**
-     * @return QINDemo_Models_Dao
+     * @return Models_Service_Open_Test
      */
     public static function dao()
     {

@@ -10,8 +10,8 @@ defined('Q_APPLICATION_ENV') || define('Q_APPLICATION_ENV', (ini_get('yaf.enviro
 ###########################################################################################
 //set_include_path(implode(PATH_SEPARATOR, array(get_include_path(), ini_get('qin.path'))));
 //set_include_path(implode(PATH_SEPARATOR, array(get_include_path(),'/Data/bak/common')));
-//set_include_path(implode(PATH_SEPARATOR, array(get_include_path(),'/Data/bak/QF2.0/Framework')));
-//include("/Data/bak/QF2.0/Framework/Q/Autoloader.php");  //以及配置了yaf.library;
+set_include_path(implode(PATH_SEPARATOR, array(get_include_path(),'/Data/bak/QF2.0/Framework')));
+include("/Data/bak/QF2.0/Framework/Q/Autoloader.php");  //以及配置了yaf.library;
 
 if (!empty($_GET['_qdebug']) && $_GET['_qdebug'] == 'xhprof') {
     $_beginTime = microtime(true);

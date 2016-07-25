@@ -31,7 +31,10 @@ class Models_Service_Open_Test extends Models_Dao
         $params = array(
             'uid' => $uid
         );
-        return $this->dao()->cache(false)->tag($this->_tag)->key("uid = $uid")->expire(3600*12)->fetchRow(Models_SqlMap_Open_Test::getOneByUid, $params);
+//        echo $this->dao()->cache(true)->tag($this->_tag)
+//            ->key("uid = $uid")->expire(3600*12)->getSql(Models_SqlMap_Open_Test::getOneByUid, $params);
+        return $this->dao()->cache(true)->tag($this->_tag)
+            ->key("uid = $uid")->expire(3600*12)->fetchRow(Models_SqlMap_Open_Test::getOneByUid, $params);
     }
 
 
