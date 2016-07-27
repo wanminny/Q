@@ -20,14 +20,14 @@ class IndexController extends QLib_Action
     public function indexAction()
     {
 
-        $demo = (new QLib\Concurrent());
-        $demo->yarClient('http://www.baidu.com');
-
-
-
+        //这个在SWOOLE中有问题！！！
+//        $bar = 'BAR';
+//        apcu_add('foo', $bar);
+//        var_dump(apcu_fetch('foo'));
+//        echo "\n";
+//
         var_dump((bool)ini_get("apc.enabled"));
         echo 11;
-        echo __METHOD__;
 //        return false;
         $user = Models_Facade_Open_Test::dao()->getOneByUid(1);
 //var_dump($user);

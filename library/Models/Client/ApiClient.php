@@ -62,15 +62,17 @@ class Models_Client_ApiClient
         }
         $this->callNum ++;
         $this->callBack = $callBack;
-        return \Yar_Concurrent_Client::call($server,$api,$params,array($this, 'ApiClientCallBack'));
+        return Yar_Concurrent_Client::call($server,$api,$params,array($this, 'ApiClientCallBack'));
     }
     /**
      * 执行并发调用
      */
     public function loop()
     {
-        return \Yar_Concurrent_Client::loop();
+        return Yar_Concurrent_Client::loop();
     }
+
+
     /**
      * 并发调用回调
      * @param  $retval
